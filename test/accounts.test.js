@@ -29,6 +29,13 @@ describe("Accounts Page", () => {
     });
   });
 
+  // test function added to both files test account and account.js./
+if (typeof findAccountById === "function") {
+  console.log("Test passed.It is a function");
+} else {
+  console.log("findAccountById() is not a function.");
+}
+  
   describe("sortAccountsByLastName()", () => {
     it("should return the list of accounts ordered by last name", () => {
       const [first, second] = sortAccountsByLastName(accounts);
