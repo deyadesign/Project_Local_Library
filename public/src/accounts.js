@@ -10,9 +10,7 @@ function findAccountById(accounts, id) {
 // previous changing to reduce instead/
 //function findAccountById(accounts, id) {
   let foundId = accounts.find((account) => account.id === id);
-   return foundId;
-}
-/
+   return foundId;}/
 
 // test function/
 if (typeof findAccountById === "function") {
