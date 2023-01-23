@@ -1,7 +1,18 @@
+// reduce instead /
 function findAccountById(accounts, id) {
+  return accounts.reduce((acc, account) => {
+    (account.id === id) ? acc = account: {}; //can use find() instead
+    return acc;
+  }, [])
+}
+
+
+// previous changing to reduce instead/
+//function findAccountById(accounts, id) {
   let foundId = accounts.find((account) => account.id === id);
    return foundId;
 }
+/
 
 // test function/
 if (typeof findAccountById === "function") {
